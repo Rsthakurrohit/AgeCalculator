@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+ 
+  .container{
+      height: fit-content;
+  }
+  .block {
+    width: 135 px;
+    padding: 5 px 20 px;
+    margin-left: 10 px;
+    display: block;
+  }
+
+  input[type="text"] {
+    width: 78vw;
+  }
+
+  
+}
