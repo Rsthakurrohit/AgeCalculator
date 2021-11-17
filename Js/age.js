@@ -19,5 +19,10 @@ function age() {
     var m = m2 - m1;  
     var y = y2 - y1;
       
-    document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days' ;  
+    if((d1 > 1 && d1 < 32) && (m1 > 1 && m1 < 13) && (y1 > 0001 && y1 <= y2 )){
+        document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days' ;  
+    }
+    else{
+        alert("Please enter correct date");
+    }
    } 
