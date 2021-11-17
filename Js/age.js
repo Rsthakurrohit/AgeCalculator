@@ -19,16 +19,17 @@ function age() {
     var m = m2 - m1;  
     var y = y2 - y1;
       
-    if((d1 > 1 && d1 < 32) && (m1 > 1 && m1 < 13) && (y1 > 0001 && y1 <= y2 )){
-        console.log(d1,m1);
-        if(d == 0 && m == 0){
-            document.getElementById('age').innerHTML = 'Happy Birthday you are ' + y + ' year old' ;
-        }
-        else{
-            document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days' ;  
+    if (d1 > 1 && d1 < 32 && m1 > 1 && m1 < 13 && y1 > 0001 && y1 <= y2) {
+    
+        if (d == 0 && m == 0) {
+            document.getElementById("age").innerHTML =
+            "Happy Birthday you are " + y + " year old";
+        } else {
+            document.getElementById("age").innerHTML =
+            "Your Age is " + y + " Years " + m + " Months " + d + " Days";
         }
     }
-    else{
+    else {
         alert("Please enter correct date");
     }
-   } 
+  } 
